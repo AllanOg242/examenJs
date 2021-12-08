@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function elAl(myArray)
+        {
+            if(!Array.isArray(myArray)) return null;
+            if(myArray.length === 0) return null;
+            var rand = myArray[Math.floor(Math.random() * myArray.length) +0];
+            return rand;
+        }
+
+        console.log(elAl(['January', 'February', 'March']));
+        console.log(elAl( ['a', 'b' ,'c', 'd'] ));
+        console.log(elAl([]));
+        console.log(elAl(""));
+        
+        
+    </script>
+</body>
+</html>
